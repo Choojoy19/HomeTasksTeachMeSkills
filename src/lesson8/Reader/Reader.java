@@ -32,7 +32,17 @@ public class Reader {
         for (Book a:books){
             System.out.print(a.getType()+", ");
         }
-        //System.out.println();
+     }
+
+    public void returnBook (int countBooks){
+        System.out.printf("\n%s вернул %d книги\n",this.fullName,countBooks);
+    }
+
+    public void returnBook ( Book...books){
+        System.out.print(fullName+" вернул книги: ");
+        for (Book a:books){
+            System.out.print(a.getType()+", ");
+        }
     }
 
 }
